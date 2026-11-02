@@ -1,8 +1,8 @@
 {
   "package": "com.cybergym.mutants_companion",
-  "versionCode": 20261159,
-  "versionName": "v0.2",
-  "apkUrl": "https://github.com/tubigonhr-code/Paldobog/releases/download/v0.2.20261159/NIXWARE_v0.2.apk",
-  "sha256": "c7c9acefdfae230acf8977807174e4482a793c1152183e2f62bf5f9a9721ce98",
+  "versionCode": 20261160,
+  "versionName": "v0.2.1-test",
+  "apkUrl": "https://github.com/tubigonhr-code/Paldobog/releases/download/v0.2.20261160/NIXWARE_v0.2.1_Update.apk",
+  "sha256": "f7eac4b50f56024f2a9f11cee7f801772405e7cf0205032c7e3ffb4cab3501ef",
   "certificateSha256": "0588e7eead75e76b2ec5f7a529e54f0dc3cf991aaa87dced1ada10f9346ad98e"
 }
