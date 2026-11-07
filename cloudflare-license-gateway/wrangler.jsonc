@@ -5,6 +5,9 @@
   "compatibility_date": "2026-11-07",
   "workers_dev": true,
   "observability": { "enabled": true },
+  "vars": {
+    "PALDOBOG_FALLBACK_BASE_URL": "https://paldobog-license-api.paldobog-free-license-host.workers.dev"
+  },
   "services": [
     {
       "binding": "PALDOBOG_PRIMARY",
