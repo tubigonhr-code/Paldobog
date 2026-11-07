@@ -28,6 +28,9 @@ Cloudflare encrypts D1 data at rest. The Worker stores license codes only as key
 - `POST /v1/refresh`
 - `POST /v1/permit`
 - Owner-only `POST /admin/v1/licenses`, `GET /admin/v1/licenses`, and `POST /admin/v1/licenses/{id}/revoke`
+- Owner-only `POST /admin/v1/licenses/duration/bulk/preview` and `POST /admin/v1/licenses/duration/bulk` for previewed bulk expiry changes
+
+The bulk preview reports counts for the full D1 license table, including licenses beyond the 1,000-record list view. A bulk change must confirm the previewed non-revoked and unlimited counts; if those counts changed, the Worker rejects the operation so the owner can refresh and confirm again. `set` assigns the chosen number of days from the change time to every non-revoked license (including expired and unlimited records). `extend` adds days to finite non-revoked licenses, starting expired licenses from today and skipping unlimited licenses. `unlimited` removes the expiry from every non-revoked license. Revoked records are never changed by these operations.
 
 The owner admin token is in the protected local secret bundle. The APK must never receive it. License codes are returned only by the authenticated issue request.
 
